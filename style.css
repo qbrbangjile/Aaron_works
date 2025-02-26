@@ -145,6 +145,11 @@ header h5 {
 	opacity: .6;
 }
 
+::selection{
+	color: #FFFFFF;
+	background-color: #009688;
+}
+
 /* =========== About =========== */
 
 .about,
@@ -378,7 +383,7 @@ input[type="submit"]:hover {
 .folio-1-header p {
 	font-family: "Rubik", serif;
 	font-size: .5em;
-	opacity: .3;
+	color: #555555;
 	text-align: center;
 	line-height: 1.5;
 	margin: 0 20% 10% 20%;
