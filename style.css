@@ -9,11 +9,12 @@ body {
 	padding: 0;
     background-color: #000000;
     color: #FFFFFF;
-
+    cursor: none;
 }
 
 a {
 	text-decoration: none;
+    cursor: none;
 }
 
 img {
@@ -308,6 +309,7 @@ textarea {
 	resize: vertical;
 	color: #b2b2b2;
 	border-radius: 10px;
+	cursor: none;
 }
 
 form input[type="text"]:focus,
@@ -326,6 +328,7 @@ input[type="submit"] {
 	transition: all 0.35s;
 	font-family: "Rubik", serif;
 	border-radius: 10px;
+	cursor: none;
 }
 
 input[type="submit"]:hover {
@@ -401,3 +404,22 @@ footer {
 	opacity: 0.2;
 }
 
+/* =========== Mouse =========== */
+
+.cursor {
+	position: fixed;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	transition: 0.05s;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	mix-blend-mode: difference;
+	z-index: 2;
+	transition: transform 0.1s ease-in-out;
+}
+
+.cursor.enlarge {
+    transform: scale(3);
+}
