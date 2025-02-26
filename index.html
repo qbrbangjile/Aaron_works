@@ -180,6 +180,18 @@
             cursor.classList.remove('enlarge');
         });
     });
+
+    const seltext = document.querySelectorAll('input[type="text"],textarea');
+
+    seltext.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            cursor.classList.add('triangle');
+        });
+
+        link.addEventListener('mouseleave', () => {
+            cursor.classList.remove('triangle');
+        });
+    });
 </script>
 
 </html>

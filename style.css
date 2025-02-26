@@ -428,3 +428,8 @@ footer {
 .cursor.enlarge {
     transform: scale(3);
 }
+
+.cursor.triangle {
+	border-radius: 0;
+	width: 3px;
+}
